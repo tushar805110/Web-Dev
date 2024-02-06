@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAMINATION FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Examination Form</h1>
+    <hr>
+    <h3>Basic Details:-</h3>
+    <form action="/action.php">
+    
+    Name:- <input type="text" placeholder="">
+    <BR>
+    <BR>
+    Father's Name:- <input type="text" placeholder="">
+    <BR>
+    <BR>
+    Mother's Name:- <input type="text" placeholder="">
+    <BR>
+    <BR>
+     Gender:- <input type="radio" value="Male" name="Gender">Male
+    <input type="radio" value="Female" name="Gender">Female
+    <BR>
+    <BR>
+    Category:- 
+    <input type="radio" value="Gen" name="Category">GEN
+    <input type="radio" value="OBC" name="Category">OBC
+    <input type="radio" value="SC" name="Category">SC
+    <input type="radio" value="ST" name="Category">ST
+    <BR>
+    <BR>
+    E-Mail id:- <input type="text" placeholder="">
+    <BR>
+    <BR>
+    Phone No:- <input type="text" placeholder="">
+    <BR>
+    <br>
+        <hr>
+        
+    <h3>Educational Qualifications:-</h3>
+    
+    <label for="101">
+    Select Your Class:-
+    <input type="radio" value="Class XI" name="Class" id="101">Class XI
+ </label>
+
+ <label for="102">
+    <input type="radio" value="Class XII" name="Class" id="102">Class XII
+    </label>
+    <br>
+    <br>
+    Choose Your Section:-
+    <select name="Section" id="Section">
+        <option value="Section">Section</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+    </select>
+    <br>
+    <br>
+    Select Your Subject:-
+    <select name="Subject" id="Subject">
+        <option value="Subject">Subject</option>
+        <option value="Science">Science</option>
+        <option value="Arts">Arts</option>
+        <option value="Commerce">Commerce</option>
+    </select>
+<br>
+<br>
+Degree:-
+
+    <select name="Degree" id="Degree">
+        <option value="Appearing">Appearing</option>
+        <option value="Completed">Completed</option>
+        <option value="Backlog">Backlog</option>
+        <option value="None">None</option>
+    </select>
+    <br>
+    <br>
+    Year:-
+    <select name="Year" id="Year">
+        <option value="Year">Year</option>
+        <option value="2016-18">2016-18</option>
+        <option value="2018-2020">2018-2020</option>
+        <option value="2020-2022">2020-2022</option>
+        <option value="2022-2024">2022-2024</option>
+    </select>
+    <br>
+    <br>
+    <hr>
+    
+<h3>Upload Your Photo & Signature:-</h3>
+
+<div>
+    Photo 
+</div>
+<pre>    <button>UPLOAD</button></pre>
+<br>
+<div>
+    Signature
+</div>
+<pre>    <button>UPLOAD</button></pre>
+<br>
+<hr>
+<h3>Declaration:-</h3>
+<input type="checkbox">I hereby declare that the information given above and in the enclosed documents is
+true to the best of my knowledge and belief and nothing has been concealed therein. I
+understand that if the information given by me is proved false/not true, I will have to
+face the punishment as per the law. Also, all the benefits availed by me shall be
+summarily withdrawn. 
+
+<pre>                                                                           <button>Submit</button></pre>
+    
+</form>
+</body>
+</html>
