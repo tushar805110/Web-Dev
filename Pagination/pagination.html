@@ -10,7 +10,13 @@
 
 <body>
 
+
     <div class="container">
+        <div>
+            <h1 style="color: black;">Document 2</h1>
+            <!-- Links to other documents -->
+            <a href="../root.html" style="color: black;">Go to HomePage</a>
+        </div>
         <div class="Pagination">
             <button class="btn1" onclick="backBtn()"><img src="arrow.png">prev</button>
             <ul>
@@ -26,47 +32,7 @@
     </div>
 
 
-    <script>
-        let link = document.getElementsByClassName("link");
-
-        let currentvalue = 1;
-
-        function activeLink() {
-            for (l of link) {
-                l.classList.remove("active");
-
-            }
-            event.target.classList.add("active");
-            currentValue = event.target.value;
-        }
-
-        function backBtn() {
-            if (currentValue > 1) {
-                for (l of link) {
-                    l.classList.remove("active");
-
-                }
-                (currentValue--);
-                link[currentValue - 1].classList.add("active");
-
-            }
-
-        }
-
-        function nextBtn() {
-            if (currentValue < 6) {
-                for (l of link) {
-                    l.classList.remove("active");
-
-                }
-                currentValue++;
-                link[currentValue - 1].classList.add("active");
-
-            }
-
-        }
-
-    </script>
 </body>
+<script ype="text/javascript" src="./pagination.js"></script>
 
 </html>
